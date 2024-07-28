@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://d0s7ptyjju6ij"]
+
+[ext_resource type="PackedScene" uid="uid://ujl323li5aj7" path="res://player/player.tscn" id="1_t0bo3"]
+[ext_resource type="PackedScene" uid="uid://bfgb2o8nkoe46" path="res://enemies/pawn.tscn" id="2_fvu6k"]
+[ext_resource type="PackedScene" uid="uid://bsg3wlilemby7" path="res://enemies/Sheep.tscn" id="3_6lae8"]
+[ext_resource type="PackedScene" uid="uid://dajw485gob24m" path="res://enemies/Goblin.tscn" id="4_4kfhj"]
+[ext_resource type="Texture2D" uid="uid://c8upaehkr33lb" path="res://addon/KenneyParticlesPack/light_03.png" id="5_tqjb5"]
+[ext_resource type="Texture2D" uid="uid://dtl88eb7sgnda" path="res://addon/KenneyParticlesPack/magic_02.png" id="6_15c1j"]
+[ext_resource type="Texture2D" uid="uid://doqryjrqug6kb" path="res://addon/KenneyParticlesPack/magic_03.png" id="7_ltwqh"]
+
+[node name="TestBattle" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_t0bo3")]
+position = Vector2(589, 353)
+
+[node name="Pawn4" parent="." instance=ExtResource("2_fvu6k")]
+position = Vector2(253, 339)
+
+[node name="Pawn6" parent="." instance=ExtResource("2_fvu6k")]
+position = Vector2(-220, 166)
+
+[node name="Pawn7" parent="." instance=ExtResource("2_fvu6k")]
+position = Vector2(-46, -137)
+
+[node name="Sheep" parent="." instance=ExtResource("3_6lae8")]
+position = Vector2(179, 526)
+
+[node name="Sheep3" parent="." instance=ExtResource("3_6lae8")]
+position = Vector2(-236, 459)
+
+[node name="Sheep5" parent="." instance=ExtResource("3_6lae8")]
+position = Vector2(-274, -273)
+
+[node name="Pawn9" parent="." instance=ExtResource("4_4kfhj")]
+position = Vector2(345, 771)
+
+[node name="Pawn12" parent="." instance=ExtResource("4_4kfhj")]
+position = Vector2(-274, -87)
+
+[node name="Ritual" type="Node2D" parent="."]
+
+[node name="Light03" type="Sprite2D" parent="Ritual"]
+position = Vector2(583, 326)
+scale = Vector2(1.25491, 1.25491)
+texture = ExtResource("5_tqjb5")
+
+[node name="Magic02" type="Sprite2D" parent="Ritual"]
+position = Vector2(588, 324)
+scale = Vector2(2.19213, 2.19213)
+texture = ExtResource("6_15c1j")
+
+[node name="Magic03" type="Sprite2D" parent="Ritual"]
+position = Vector2(589, 325)
+texture = ExtResource("7_ltwqh")

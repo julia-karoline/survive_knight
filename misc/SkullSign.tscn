@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://4ebmh50u5hcj"]
+
+[ext_resource type="Texture2D" uid="uid://j5tp2yc1gjku" path="res://addon/Tiny Swords (Update 010)/Deco/16.png" id="1_w141v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_18iji"]
+radius = 34.0
+height = 68.0
+
+[node name="Sign" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -25)
+shape = SubResource("CapsuleShape2D_18iji")
+
+[node name="16" type="Sprite2D" parent="."]
+position = Vector2(-2, -34)
+texture = ExtResource("1_w141v")

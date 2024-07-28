@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn7qfhesmalga"]
+
+[ext_resource type="PackedScene" uid="uid://ujl323li5aj7" path="res://player/player.tscn" id="1_rrx6e"]
+[ext_resource type="PackedScene" uid="uid://cdrgsba4p7bes" path="res://systems/mob_spawner.tscn" id="2_wttqy"]
+
+[node name="TestMobSpawning" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rrx6e")]
+position = Vector2(567, 372)
+speed = 4
+sword_damage = 8
+ritual_interval = 6
+
+[node name="MobSpawner" parent="." instance=ExtResource("2_wttqy")]

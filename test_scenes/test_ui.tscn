@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxcjocka5l30q"]
+
+[ext_resource type="PackedScene" uid="uid://echswmn102sv" path="res://UI/game_ui.tscn" id="1_q6fgs"]
+[ext_resource type="PackedScene" uid="uid://ujl323li5aj7" path="res://player/player.tscn" id="2_m26bq"]
+[ext_resource type="PackedScene" uid="uid://dajw485gob24m" path="res://enemies/Goblin.tscn" id="3_rqcx5"]
+[ext_resource type="PackedScene" uid="uid://bsg3wlilemby7" path="res://enemies/Sheep.tscn" id="4_6suia"]
+[ext_resource type="PackedScene" uid="uid://bfgb2o8nkoe46" path="res://enemies/pawn.tscn" id="5_q3r0u"]
+[ext_resource type="PackedScene" uid="uid://dcl7566bc541p" path="res://misc/meat.tscn" id="6_pl3vd"]
+
+[node name="TestUi" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_m26bq")]
+position = Vector2(431, 169)
+
+[node name="Goblin" parent="." instance=ExtResource("3_rqcx5")]
+position = Vector2(-321, 276)
+
+[node name="Goblin2" parent="." instance=ExtResource("3_rqcx5")]
+position = Vector2(614, 1077)
+
+[node name="Sheep" parent="." instance=ExtResource("4_6suia")]
+position = Vector2(237, 982)
+
+[node name="Pawn" parent="." instance=ExtResource("5_q3r0u")]
+position = Vector2(976, 971)
+
+[node name="Goblin3" parent="." instance=ExtResource("3_rqcx5")]
+position = Vector2(794, 829)
+
+[node name="Pawn2" parent="." instance=ExtResource("5_q3r0u")]
+position = Vector2(97, 861)
+
+[node name="Sheep2" parent="." instance=ExtResource("4_6suia")]
+position = Vector2(-234, 789)
+
+[node name="Sheep3" parent="." instance=ExtResource("4_6suia")]
+position = Vector2(419, 783)
+
+[node name="Sheep4" parent="." instance=ExtResource("4_6suia")]
+position = Vector2(1228, 899)
+
+[node name="Sheep5" parent="." instance=ExtResource("4_6suia")]
+position = Vector2(1309, 643)
+
+[node name="Pawn3" parent="." instance=ExtResource("5_q3r0u")]
+position = Vector2(1116, 654)
+
+[node name="GameUI" parent="." instance=ExtResource("1_q6fgs")]
+
+[node name="Meat" parent="." instance=ExtResource("6_pl3vd")]
+position = Vector2(1053, 367)
+
+[node name="Meat2" parent="." instance=ExtResource("6_pl3vd")]
+position = Vector2(89, 554)
