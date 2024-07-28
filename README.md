@@ -12,3 +12,6 @@ Tentei adicionar uma animação que avisaria o jogador quando o novo ritual foss
 Por algum motivo as fontes que eu coloquei no jogo são descartadas quando o mesmo é exportado para o Itch.o, deixando a interface de usuario desformatada. 
 
 Foi uma experiencia muito divertida apesar de não ter conseguido corrigir os erros a tempo. Vou continuar melhorando o projeto para aprender ainda mais.
+
+Itch.io Link
+https://julia-karoline.itch.io/survive-little-knight
